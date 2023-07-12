@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blr Patisserie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+<style>
+    body{
+        background-color:blanchedalmond;
+    }
+    .top-bar{
+        height: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #4158D0;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+        top: 0;
+    }
+    .top-bar ul{
+        margin-left:390px;
+        font-size: 40px;
+        font-weight:600;
+        font-family: 'Cinzel', serif;
+        color: cornsilk;
+        font-size: 40px;
+    }
+    .side-bar{
+        position:fixed;
+        width:15%;
+        background-color: #4158D0;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+        top:0;
+    }
+    .side-items ul{
+        margin-top: 40px;
+        list-style-type:none;
+        height:800px;
+        font-size:23px;
+    }
+    .side-items a{
+        text-decoration: underline;
+        color:cornsilk;
+
+    }
+    .side-items a:hover{
+        text-decoration: underline;
+        color:black;
+    }
+    .side-pics img{
+        width: 80%;
+        height:150px;
+        border-radius:70%;
+        margin: 20px;
+    }
+    .carousel-inner img{
+        margin-top:70px;  
+        border-radius: 15px;
+        height: 400px;
+        width: 600px;
+        margin-left: 200px;
+
+    }
+    .BLR-home{
+        height:650px;
+        width:1000px;
+        border:solid;
+        margin-top:90px;
+        border-radius:15px;
+        margin-left: 380px;
+        background-color:black;
+    }
+    .BLR-home h2{
+        color:blanchedalmond;
+        margin-left: 300px;
+        font-size: 25px;
+        font-family: 'Cinzel', serif;
+    }
+    .BLR-best{
+        height:600px;
+        width:1000px;
+        margin-top:350px;
+        border-radius: 15px;
+        margin-left:0px;
+        display: flex;
+        border-color:blanchedalmond;
+        background-color:black;
+    }
+
+    .BLR-best h2{
+        margin-left:10px;
+        color: white;
+        font-size:30px;
+    }
+    .BLR-best-pics img{
+        border-radius:15px 15px 15px 15px;
+        position: relative;
+        left:0px;
+        top:50px;
+        height:200px;
+        width:200px;
+        margin-left: 50px;
+    }
+    .BLR-theme{
+        height:600px;
+        width:1000px;
+        margin-top: 150px;
+        border-radius: 15px;
+        margin-left:0px;
+        display: flex;
+        border-color:orangered;
+        background-color:black;
+    }
+    .BLR-theme h2{
+        margin-left:10px;
+        color: white;
+        font-size:30px;
+    }
+    .BLR-theme-pics img{
+        border-radius:15px 15px 15px 15px;
+        position: relative;
+        left:0px;
+        top:50px;
+        height:200px;
+        width:200px;
+        margin-left: 50px;
+    }
+    .BLR-season{
+        height:600px;
+        width:1000px;
+        margin-top: 150px;
+        border-radius: 15px;
+        margin-left:0px;
+        display: flex;
+        border-color:orangered;
+        background-color:black;
+    }
+    .BLR-season h2{
+        margin-left:10px;
+        color: white;
+        font-size:30px;
+    }
+    .BLR-season-pics img{
+        border-radius:15px 15px 15px 15px;
+        position: relative;
+        left:0px;
+        top:50px;
+        height:200px;
+        width:200px;
+        margin-left: 50px;
+    }
+    .BLR-about{
+        height:600px;
+        width:1000px;
+        margin-top: 150px;
+        border-radius: 15px;
+        margin-left:0px;
+        display: flex;
+        border-color:orangered;
+        background-color:black;
+    }
+    .BLR-about h2{
+        margin-left:10px;
+        color: white;
+        font-size:30px;
+    }
+    .about-text p{
+        color:ghostwhite;
+        height: 300px;
+        width: 600px;
+        text-align: justify;
+        margin-left: 15px;
+        margin-top: 50px;
+        line-height: 2;
+    }
+    .BLR-contact{
+        height:200px;
+        width:1000px;
+        margin-top: 150px;
+        border-radius: 15px;
+        margin-left:0px;
+        display: flex;
+        border-color:orangered;
+        background-color:black;
+    }
+    .BLR-contact h2{
+        margin-left:10px;
+        color: white;
+        font-size:30px;
+    }
+    .BLR-contact a{
+        color: white;
+    }
+    .BLR-contact img{
+        border-radius: 10px;
+        position:relative;
+        left:30px;
+        top:100px;
+        height:40px;
+        width: 40px;
+        margin-left: 40px;
+    }
+    .logo img{
+        border-radius:90%;
+        height: 70px;
+        width: 100px;
+        margin-left: 230px; 
+    }
+   
+</style>
+</head>
+<body>
+        <div class="top-bar">
+                <div class="logo">
+                    <img src="patilogo.jpg" alt="">
+                </div>
+                <ul>Blr Patisserie!</ul>
+            </div>
+           
+            <!-- side bar starts -->
+            <div class="side-bar">
+                <div class="side-pics">
+                    <img src="cake-logo.jpg" alt="">
+                    <img src="cake-logo-3.jpg" alt="">
+                </div>
+                <div class="side-items">
+                    <ul>
+                        <a href="#home">
+                            <li>Home</li>
+                        </a>
+                        <a href="#best">
+                            <li>Best-Sellers</li>
+                        </a>
+                        <a href="#theme">
+                            <li>Theme cakes</li>
+                        </a>
+                        <a href="#season">
+                            <li>Seasonal cakes</li>
+                        </a>
+                        <a href="#about">
+                            <li>About</li>
+                        </a>
+                        <a href="#contact">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <!-- side bar ends -->
+            <!-- Home sections starts -->
+            <div class="BLR-home">
+                <h2 id="home">"Our passion for pastry is in every bite."</h2>
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="premium cake 1.jpg" class="d-block" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="premium cake 2.jpg" class="d-block" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="premium cake 3.jpg" class="d-block" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div><br>
+            <!-- Home section ends -->
+            <!-- best starts -->
+            <div class="BLR-best">
+                <h2 id="best">Best-Sellers</h2>
+                <div class="BLR-best-pics">
+                    <img src="best 1.jpg" alt="">
+                    <img src="best 2.jpg" alt="">
+                    <img src="best 3.jpg" alt=""><br><br><br><br>
+                    <img src="best 4.jpg" alt="">
+                    <img src="best 5.jpg" alt="">
+                    <img src="best 6.jpg" alt="">
+                </div>
+            </div>
+            <!-- best ends -->
+            <!-- Theme starts -->
+            <div class="BLR-theme">
+                <h2 id="theme">Theme Cakes</h2>
+                <div class="BLR-theme-pics">
+                    <img src="theme 1.jpg" alt="">
+                    <img src="theme 2.jpg" alt="">
+                    <img src="theme 3.jpg" alt=""><br><br><br><br>
+                    <img src="theme 4.jpg" alt="">
+                    <img src="theme 5.jpg" alt="">
+                    <img src="theme 6.jpg" alt="">
+                </div>
+            </div>
+            <!-- Theme ends -->
+            <!-- seasonal starts -->
+            <div class="BLR-season">
+                <h2 id="season">Seasonal Cakes</h2>
+                <div class="BLR-season-pics">
+                    <img src="season 1.jpg" alt="">
+                    <img src="season 2.jpg" alt="">
+                    <img src="season 3.jpg" alt=""><br><br><br><br>
+                    <img src="season 4.jpg" alt="">
+                    <img src="season 5.jpg" alt="">
+                    <img src="season 6.jpg" alt="">
+                </div>
+            </div>
+            <!-- seasonal ends -->
+            <!-- About starts -->
+            <div class="BLR-about">
+                <h2 id="about">About</h2>
+                <div class="about-text">
+                    <p>Blr Patisserie is a delightful bakery located in the heart of Bangalore, India. With its cozy ambiance and welcoming aromas, it offers a unique and unforgettable experience to every visitor. The bakery specializes in creating exquisite French-style pastries, bread, cakes, and other baked goods that are made with the finest quality ingredients and utmost care. Their wide variety of delicacies includes croissants, macarons, tarts, éclairs, and much more. They also cater to special occasions like birthdays, weddings, and corporate events with customized cakes and desserts. The friendly and knowledgeable staff at Blr Patisserie are always ready to help customers select the perfect treat and offer recommendations. The bakery also has a small cafe area where customers can enjoy their baked goods with a cup of freshly brewed coffee or tea. Blr Patisserie is a must-visit destination for anyone with a sweet tooth looking for an exceptional bakery experience.</p>
+                </div>
+                
+            </div>
+
+            <!-- About ends -->
+            <!-- Contact starts -->
+            <div class="BLR-contact">
+                <h2 id="contact">Contact</h2>
+                    <a href="https://mail.google.com/mail/u/0/#inbox"><img src="gmail logo.png">
+                        
+                        </a>
+                    <a href="https://www.instagram.com/shashank_m__/"><img src="insta logo.jpg">
+                        
+                       </a>
+                    <a href="https://api.whatsapp.com/send?phone=9980974412"><img src="whatsapp logo.png">
+                        
+                       </a>
+                    <a href="tel:+919980974412"><img src="phone logo.png">
+                        
+                       </a>
+            </div>
+
+            <!-- Contact ends -->
+</body>
+</html>
